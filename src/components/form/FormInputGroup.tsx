@@ -9,10 +9,10 @@ interface InputGroupProps {
 
 export default function FormInputGroup(props: InputGroupProps) {
   return (
-    <div className="flex flex-col items-start w-full mb-16">
+    <div className="flex flex-col items-start w-full py-6 md:mb-6">
       <label
         htmlFor={props.dataType}
-        className="inline-block py-1 cursor-text text-2xl font-bold"
+        className="inline-block cursor-text text-2xl font-bold"
       >
         {props.dataType}
       </label>

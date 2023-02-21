@@ -14,13 +14,14 @@ export default function FormAuth(props: FormAuthProps) {
     <form
       action="submit"
       className={`
-        selection:bg-vonCount
-        flex flex-col items-center w-3/5 lg:w-2/5 rounded-md
-        m-auto p-10 text-lg capitalize bg-aro text-buffy
+        selection:bg-vonCount p-5
+        flex flex-col items-center rounded-md
+        m-auto text-lg capitalize bg-aro text-buffy
         shadow-2xl relative overflow-hidden
+        min-w-[300px] w-4/6 sm:max-w-sm md:max-w-lg md:p-6 lg:max-w-xl
       `}
     >
-      <h1 className="text-4xl mb-14 w-full">{props.titleText}</h1>
+      <h1 className="text-4xl mb-10 w-full">{props.titleText}</h1>
       <div
         className={`
           flex items-center justify-center
@@ -36,9 +37,10 @@ export default function FormAuth(props: FormAuthProps) {
         onClick={(e: React.MouseEvent<HTMLButtonElement>) => props.onSubmit(e)}
         className={`
           text-4xl font-bold capitalize
-          w-auto py-3 px-10 mb-10 mt-6 lg:mb-5
+          py-3 px-10 mb-12
           hover:bg-nosferatu
           ease duration-1000 rounded-md
+          md:m-6
         `}
       >
         {props.btnText}

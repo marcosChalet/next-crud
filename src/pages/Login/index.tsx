@@ -7,7 +7,7 @@ export default function Login() {
   const { emailRef, passwordRef, onSubmitIn, loginRouteIn } = useAuth();
 
   return (
-    <div className="w-screen h-screen flex items-center bg-nosferatu font-bold">
+    <div className="min-w-screen min-h-screen flex items-center bg-nosferatu font-bold">
       <FormAuth
         btnText={'login'}
         titleText={'sign in'}
