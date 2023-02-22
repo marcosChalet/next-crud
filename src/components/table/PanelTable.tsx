@@ -17,8 +17,8 @@ export default function PanelTable({
   removeClient,
 }: PanelTableProps) {
   return (
-    <>
-      <div className="flex justify-end">
+    <div className="overflow-auto m-3 sm:p-6 sm:m-0">
+      <div className="flex justify-start sm:justify-end">
         <Button color="blade" className="mb-4" onClick={newClient}>
           New Client
         </Button>
@@ -28,6 +28,6 @@ export default function PanelTable({
         selectedClient={selectClient}
         deletedClient={removeClient}
       />
-    </>
+    </div>
   );
 }

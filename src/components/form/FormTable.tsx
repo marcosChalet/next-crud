@@ -17,7 +17,7 @@ export default function FormTable(props: FormProps) {
   const auth = useContext(AuthContext);
 
   return (
-    <div>
+    <div className="p-6">
       {id ? <Input readOnly text="Code" value={id} className="mb-5" /> : false}
 
       <Input

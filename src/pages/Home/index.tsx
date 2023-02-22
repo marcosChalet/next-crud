@@ -21,8 +21,9 @@ export default function Home() {
   return (
     <div
       className={`
-      flex flex-col min-w-[800px] min-h-screen justify-center items-center
+      flex flex-col justify-center items-center
       bg-nosferatu text-white
+      min-h-screen w-screen
     `}
     >
       {!isEmailConfirmed && (
